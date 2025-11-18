@@ -35,12 +35,9 @@ pipeline {
         stage('Build Docker') {
             steps {
                 script {
-                    // Build from jenkins-agent directory (self-contained)
-                    dir('jenkins-agent') {
-                        sh """
-                            docker build -f Dockerfile -t ${FULL_IMAGE_NAME} .
-                        """
-                    }
+                    sh """
+                        docker build -f Dockerfile -t ${FULL_IMAGE_NAME} .
+                    """
                 }
             }
         }
