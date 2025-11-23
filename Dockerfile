@@ -7,6 +7,23 @@ FROM python:3.11-slim
 RUN apt-get update && apt-get install -y --no-install-recommends \
     git \
     curl \
+    libglib2.0-0 \
+    libnspr4 \
+    libnss3 \
+    libdbus-1-3 \
+    libatk1.0-0 \
+    libatk-bridge2.0-0 \
+    libatspi0 \
+    libx11-6 \
+    libxcomposite1 \
+    libxdamage1 \
+    libxext6 \
+    libxfixes3 \
+    libxrandr2 \
+    libgbm1 \
+    libxcb1 \
+    libxkbcommon0 \
+    libasound2 \
     && rm -rf /var/lib/apt/lists/*
 
 # Upgrade pip and install Python dependencies
