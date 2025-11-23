@@ -6,23 +6,20 @@ google-cloud-aiplatform>=1.38.0,<2.0.0
 tiktoken>=0.5.0
 chromadb>=0.4.0
 
-# RAG service dependencies
-fastapi>=0.104.1,<1.0.0
-uvicorn[standard]>=0.24.0,<1.0.0
+# RAG service dependencies (Pinned to verified versions)
+fastapi==0.121.3
+uvicorn[standard]==0.38.0
 python-dotenv>=1.0.0
-pydantic>=2.5.0,<3.0.0
+pydantic==2.12.4
 slowapi>=0.1.9
 
 # Additional dependencies
 importlib-metadata>=6.0.0
 vertexai
 
-# For the Vordu project
-fastapi
-uvicorn
-pytest
-pytest-bdd
-playwright
-requests
-sqlalchemy
-pydantic
+# For the Vordu project (Pinned)
+pytest==9.0.1
+pytest-bdd==8.1.0
+playwright==1.40.0
+requests==2.32.5
+sqlalchemy==2.0.44
