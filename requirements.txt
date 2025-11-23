@@ -17,3 +17,12 @@ slowapi>=0.1.9
 importlib-metadata>=6.0.0
 vertexai
 
+# For the Vordu project
+fastapi
+uvicorn
+pytest
+pytest-bdd
+playwright
+requests
+sqlalchemy
+pydantic
